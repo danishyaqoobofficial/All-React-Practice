@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 
 const SidBar = (props) => {
   return (
-      <NavLink to= {props.link} className={({ isActive }) => `w-full text-[14px] cursor-pointer px-[22px] py-[11px] rounded-[5px] transition-all ${isActive ? 'bg-blue-500 text-white' : 'hover:bg-blue-500 hover:text-white'}`}>{props.user}</NavLink>
+      <NavLink to= {props.link} className={(e) => `w-full text-[14px] cursor-pointer px-[22px] py-[11px] rounded-[5px] transition-all ${e.isActive ? 'bg-blue-500 text-white' : 'hover:bg-blue-500 hover:text-white'}`}>{props.user}</NavLink>
   )
 }
 
